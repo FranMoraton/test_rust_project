@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 use std::slice::Iter;
 
-fn main() {
+pub fn main() {
     let mut x: HashMap<String, String> = HashMap::new();
     x.insert(
         String::from("Ancient Roman History"),
@@ -71,10 +71,24 @@ fn main() {
         println!("The {} is a big bird.", bird);
     }
 
-    let mut iterator = big_birds.iter();
+    let mut iterator : Iter<&str> = big_birds.iter();
     
     println!("The {} is a big bird.", iterator.next().unwrap());
     println!("The {:?} is a big bird.", iterator.next().ok_or("error"));
     println!("The {:?} is a big bird.", iterator.next().ok_or("error"));
     println!("The {:?} is a big bird.", iterator.next().ok_or("error"));
+
+    //refers same pointers as original array [&str;3]
+    for bird in big_birds.iter() {
+        println!("{:p}", bird);
+    }
+
+    println!("{:p}", &big_birds[0]);
+    println!("{:p}", &big_birds[1]);
+    println!("{:p}", &big_birds[2]);
+
+    //creates and allocate a copy of array
+    for bird in big_birds {
+        println!("{:p}", bird);
+    }
 }

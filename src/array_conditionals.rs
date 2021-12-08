@@ -41,7 +41,7 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
     }
 }
 
-fn main() {
+pub fn main() {
     let colors = ["Blue", "Green", "Red", "Silver"];
 
     let mut engine: Transmission = Transmission::Manual;

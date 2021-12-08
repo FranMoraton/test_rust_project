@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
           let mut a_number = 10;
           println!("Hello, world {}!", a_number);
           a_number = 15;
@@ -103,7 +103,7 @@ fn main() {
           
           car = car_factory(String::from("Yellow"), Transmission::SemiAuto, false);
           println!("Car 3 = {}, {:?} transmission, convertible: {}, mileage: {}", car.color, car.transmission, car.convertible, car.mileage);
-      }
+}
       
       //derive debug macro allows to print structs
       #[derive(Debug)]
@@ -160,4 +160,3 @@ fn main() {
               mileage: 0,
           };
       }
-}
