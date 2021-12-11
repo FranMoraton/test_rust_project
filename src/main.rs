@@ -6,6 +6,8 @@ pub mod display_impl;
 pub mod static_assignation;
 pub mod handle_errors;
 pub mod handle_errors_file_read;
+pub mod memory_handling;
+pub mod borrowing;
 
 
 fn main() {
@@ -17,6 +19,8 @@ fn main() {
     static_assignation::main();
     pattern_matching::main();
     handle_errors::main();
-    */
     handle_errors_file_read::main();
+    memory_handling::main();
+     */
+    borrowing::main();
 }
