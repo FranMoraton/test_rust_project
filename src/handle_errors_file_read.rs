@@ -2,11 +2,6 @@ use std::fs::File;
 use std::io::{Error, Read};
 use std::path::PathBuf;
 
-enum ErrorFileNotExist {
-    PathIsWrong
-}
-
-
 fn read_file_contents(path: PathBuf) -> Result<String, Error> {
     let mut string = String::new();
 

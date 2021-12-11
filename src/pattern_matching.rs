@@ -24,7 +24,7 @@ pub fn main() {
     
     match apple {
         Some(&"apple") => println!("xss"),
-        Some(T) => println!("That's my lucky number!"),
+        Some(t) => println!("That's my lucky number!"),
         _ => println!("default"),
     }
 
