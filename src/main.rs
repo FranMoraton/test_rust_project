@@ -14,6 +14,8 @@ pub mod traits;
 pub mod traits2;
 pub mod traits3;
 pub mod iterator;
+pub mod generic_exercise;
+pub mod iterator_exercise;
 
 fn main() {
     /*
@@ -32,8 +34,8 @@ fn main() {
     traits::main();
     traits2::main();
     traits3::main();
+    iterator::main();
      */
-
-    iterator::main();
-    iterator::main();
+    generic_exercise::main();
+    iterator_exercise::main();
 }
