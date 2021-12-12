@@ -35,7 +35,8 @@ fn main() {
     traits2::main();
     traits3::main();
     iterator::main();
-     */
     generic_exercise::main();
+     */
+
     iterator_exercise::main();
 }
