@@ -1,7 +1,7 @@
 // TODO: modify only this function.
 fn copy_and_return<'a>(vector: &'a mut Vec<String>, value: &'a str) -> &'a str{
     vector.push(String::from(value));
-    return value;
+    vector.get(vector.len() - 1).unwrap()
 }
 
 pub fn main() {
