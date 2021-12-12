@@ -35,4 +35,5 @@ fn main() {
      */
 
     iterator::main();
+    iterator::main();
 }
