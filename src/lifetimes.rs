@@ -44,7 +44,7 @@ fn call_struct_marked() {
     let dog = Highlight(&text[35..43]);
 
     // we cant move text its borrowed to fox and dog
-    erase(text);
+    // erase(text);
 
     println!("{:?}", fox);
     println!("{:?}", dog);

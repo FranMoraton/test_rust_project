@@ -9,6 +9,7 @@ pub mod handle_errors_file_read;
 pub mod memory_handling;
 pub mod borrowing;
 pub mod lifetimes;
+pub mod lifetime_exercise;
 
 
 fn main() {
@@ -23,6 +24,7 @@ fn main() {
     handle_errors_file_read::main();
     memory_handling::main();
     borrowing::main();
-     */
     lifetimes::main();
+     */
+    lifetime_exercise::main();
 }
