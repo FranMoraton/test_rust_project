@@ -5,10 +5,12 @@ pub fn main() {
     println!("pointer to struct {:p}", &circle_declaration);
     print_area(&circle_declaration);
     print_area_dyn(&circle_declaration);
+    print_area_generic(&circle_declaration);
 
     println!("pointer to struct {:p}", &rectangle_declaration);
     print_area(&rectangle_declaration);
     print_area_dyn(&rectangle_declaration);
+    print_area_generic(&rectangle_declaration);
 
 }
 
@@ -23,6 +25,11 @@ fn print_area(area: &impl Area) {
 
 fn print_area_dyn(area: &dyn Area) {
     println!("pointer function dyn area {:p}", &area);
+    println!("{}", area.calculate_area());
+}
+
+fn print_area_generic<T: Area>(area: &T) {
+    println!("pointer function generic area {:p}", &area);
     println!("{}", area.calculate_area());
 }
 
