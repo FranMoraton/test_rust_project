@@ -10,7 +10,8 @@ pub mod memory_handling;
 pub mod borrowing;
 pub mod lifetimes;
 pub mod lifetime_exercise;
-
+pub mod traits;
+pub mod traits2;
 
 fn main() {
     /*
@@ -25,6 +26,8 @@ fn main() {
     memory_handling::main();
     borrowing::main();
     lifetimes::main();
-     */
     lifetime_exercise::main();
+     */
+    traits::main();
+    traits2::main();
 }

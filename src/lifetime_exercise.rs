@@ -18,5 +18,18 @@ pub fn main() {
     assert_eq!(
         names,
         vec!["Joe".to_string(), "Chris".to_string(), "Anne".to_string()]
-    )
+    );
+
+    let integer_and_boolean = Point { x: 5, y: false, z: 2 };
+    let float_and_string = Point { x: 1.0, y: "hey", z: 1.0 };
+    let integer_and_float = Point { x: 5, y: 4.0, z: 2 };
+    let both_integer = Point { x: 10, y: 30, z: 1 };
+    let both_boolean = Point { x: true, y: true, z: true };
+}
+
+//two generics but x and z must be the same kind of value
+struct Point<T, U> {
+    x: T,
+    y: U,
+    z: T,
 }
