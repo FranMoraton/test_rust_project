@@ -12,6 +12,8 @@ pub mod lifetimes;
 pub mod lifetime_exercise;
 pub mod traits;
 pub mod traits2;
+pub mod traits3;
+pub mod iterator;
 
 fn main() {
     /*
@@ -27,7 +29,10 @@ fn main() {
     borrowing::main();
     lifetimes::main();
     lifetime_exercise::main();
-     */
     traits::main();
     traits2::main();
+    traits3::main();
+     */
+
+    iterator::main();
 }
