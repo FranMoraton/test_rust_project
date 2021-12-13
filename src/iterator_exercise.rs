@@ -42,7 +42,10 @@ pub fn main() {
             vec![4, 4],
             vec![3],
         ]
-    )
+    );
+
+    let group_iter = Groups::new(vec!['a', 'b' , 'a', 'a', 'c', 'c', 'd']);
+    println!("{:?}", group_iter.into_iter().collect::<Vec<Vec<_>>>())
 }
 
 #[derive(Debug)]
