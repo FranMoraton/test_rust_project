@@ -16,6 +16,10 @@ pub mod traits3;
 pub mod iterator;
 pub mod generic_exercise;
 pub mod iterator_exercise;
+pub mod mod_test;
+pub mod hash_test;
+pub mod reg_ex;
+pub mod modules;
 
 fn main() {
     /*
@@ -36,7 +40,11 @@ fn main() {
     traits3::main();
     iterator::main();
     generic_exercise::main();
-     */
-
     iterator_exercise::main();
+    mod_test::main();
+    hash_test::main();
+    reg_ex::main();
+
+     */
+    modules::main();
 }
