@@ -23,6 +23,7 @@ fn print_area(area: &impl Area) {
     println!("{}", area.calculate_area());
 }
 
+// when you declare something as dyn, you lose type information, it becomes a blob and a pointer to the methods
 fn print_area_dyn(area: &dyn Area) {
     println!("pointer function dyn area {:p}", &area);
     println!("{}", area.calculate_area());

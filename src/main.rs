@@ -13,6 +13,7 @@ pub mod lifetime_exercise;
 pub mod traits;
 pub mod traits2;
 pub mod traits3;
+pub mod traits4;
 pub mod iterator;
 pub mod generic_exercise;
 pub mod iterator_exercise;
@@ -38,13 +39,15 @@ fn main() {
     traits::main();
     traits2::main();
     traits3::main();
+    traits4::main();
     iterator::main();
     generic_exercise::main();
     iterator_exercise::main();
     mod_test::main();
     hash_test::main();
     reg_ex::main();
+    modules::main();
 
      */
-    modules::main();
+    traits4::main();
 }
