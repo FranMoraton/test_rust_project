@@ -1,30 +1,29 @@
-pub mod hashmap_and_loops;
-pub mod array_conditionals;
-pub mod vars_and_print;
-pub mod pattern_matching;
-pub mod display_impl;
-pub mod static_assignation;
-pub mod handle_errors;
-pub mod handle_errors_file_read;
-pub mod memory_handling;
-pub mod borrowing;
-pub mod lifetimes;
-pub mod lifetime_exercise;
-pub mod traits;
-pub mod traits2;
-pub mod traits3;
-pub mod traits4;
-pub mod iterator;
-pub mod generic_exercise;
-pub mod iterator_exercise;
-pub mod mod_test;
-pub mod hash_test;
-pub mod reg_ex;
-pub mod modules;
+mod hashmap_and_loops;
+mod array_conditionals;
+mod vars_and_print;
+mod display_impl;
+mod pattern_matching;
+mod static_assignation;
+mod handle_errors;
+mod handle_errors_file_read;
+mod memory_handling;
+mod borrowing;
+mod lifetimes;
+mod lifetime_exercise;
+mod traits;
+mod traits2;
+mod traits3;
+mod traits4;
+mod iterator;
+mod generic_exercise;
+mod iterator_exercise;
+mod mod_test;
+mod hash_test;
+mod reg_ex;
+mod modules;
 
 fn main() {
-    /*
-    display_impl::main();
+/*     display_impl::main();
     vars_and_print::main();
     array_conditionals::main();
     hashmap_and_loops::main();
@@ -46,8 +45,6 @@ fn main() {
     mod_test::main();
     hash_test::main();
     reg_ex::main();
-    modules::main();
+    modules::main(); */
 
-     */
-    traits4::main();
 }
