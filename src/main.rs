@@ -21,6 +21,7 @@ mod mod_test;
 mod hash_test;
 mod reg_ex;
 mod modules;
+mod guessing_game;
 
 fn main() {
 /*     display_impl::main();
@@ -45,6 +46,7 @@ fn main() {
     mod_test::main();
     hash_test::main();
     reg_ex::main();
-    modules::main(); */
-
+    modules::main(); 
+    guessing_game::main(); */
+    
 }
