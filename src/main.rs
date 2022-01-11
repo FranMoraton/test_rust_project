@@ -1,3 +1,7 @@
+use chapter3::temperature;
+
+use crate::chapter3::fib;
+
 mod hashmap_and_loops;
 mod array_conditionals;
 mod vars_and_print;
@@ -22,6 +26,7 @@ mod hash_test;
 mod reg_ex;
 mod modules;
 mod guessing_game;
+mod chapter3;
 
 fn main() {
 /*     display_impl::main();
@@ -48,5 +53,6 @@ fn main() {
     reg_ex::main();
     modules::main(); 
     guessing_game::main(); */
-    
+    println!("{}", temperature::to_farenheit(16f64));
+    println!("{}", fib::to_farenheit_fib(16f64));
 }
