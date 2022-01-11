@@ -52,7 +52,8 @@ fn main() {
     hash_test::main();
     reg_ex::main();
     modules::main(); 
-    guessing_game::main(); */
+    guessing_game::main();
+    println!("{}", fib::fib(3));*/
     println!("{}", temperature::to_farenheit(16f64));
-    println!("{}", fib::to_farenheit_fib(16f64));
+
 }
