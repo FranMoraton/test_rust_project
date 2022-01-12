@@ -27,30 +27,37 @@ mod guessing_game;
 mod chapter3;
 
 fn main() {
-/*     display_impl::main();
-    vars_and_print::main();
-    array_conditionals::main();
-    hashmap_and_loops::main();
-    static_assignation::main();
-    pattern_matching::main();
-    handle_errors::main();
-    handle_errors_file_read::main();
-    memory_handling::main();
-    borrowing::main();
-    lifetimes::main();
-    lifetime_exercise::main();
-    traits::main();
-    traits2::main();
-    traits3::main();
-    traits4::main();
-    iterator::main();
-    generic_exercise::main();
-    iterator_exercise::main();
-    mod_test::main();
-    hash_test::main();
-    reg_ex::main();
-    modules::main(); 
-    guessing_game::main();
-    println!("{}", fib::fib(3));*/
-    println!("{}", temperature::to_farenheit(16f64));
+    /*     
+        display_impl::main();
+        vars_and_print::main();
+        array_conditionals::main();
+        hashmap_and_loops::main();
+        static_assignation::main();
+        pattern_matching::main();
+        handle_errors::main();
+        handle_errors_file_read::main();
+        memory_handling::main();
+        borrowing::main();
+        lifetimes::main();
+        lifetime_exercise::main();
+        traits::main();
+        traits2::main();
+        traits3::main();
+        traits4::main();
+        iterator::main();
+        generic_exercise::main();
+        iterator_exercise::main();
+        mod_test::main();
+        hash_test::main();
+        reg_ex::main();
+        modules::main(); 
+        guessing_game::main();
+        println!("{}", fib::fib(3));
+        println!("{}", temperature::to_farenheit(80f64));
+    */
+
+    println!("{}", temperature::to_farenheit(0.00));
+    println!("{}", temperature::to_farenheit(3.00));
+    println!("{}", temperature::to_farenheit(-3.00));
+
 }
