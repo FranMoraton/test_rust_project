@@ -56,8 +56,8 @@ fn main() {
         println!("{}", temperature::to_farenheit(80f64));
     */
 
-    println!("{}", temperature::to_farenheit(0.00));
-    println!("{}", temperature::to_farenheit(3.00));
-    println!("{}", temperature::to_farenheit(-3.00));
+    println!("{:.3}", temperature::to_farenheit(0.00));
+    println!("{:.2}", temperature::to_farenheit(3.00));
+    println!("{:.5}", temperature::to_farenheit(-3.00));
 
 }
