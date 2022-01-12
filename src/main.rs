@@ -52,10 +52,9 @@ fn main() {
         reg_ex::main();
         modules::main(); 
         guessing_game::main();
-        println!("{}", fib::fib(3));
-        println!("{}", temperature::to_farenheit(80f64));
     */
-
+    
+    println!("{}", fib::fib(3));
     println!("{:.3}", temperature::to_farenheit(0.00));
     println!("{:.2}", temperature::to_farenheit(3.00));
     println!("{:.5}", temperature::to_farenheit(-3.00));
