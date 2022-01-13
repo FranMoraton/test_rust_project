@@ -2,18 +2,8 @@ pub fn to_celsius(farenheit: f64) -> f64 {
     ((farenheit - 32_f64) * 5_f64 / 9_f64 * 100_f64).ceil() / 100_f64
 }
 
-pub fn to_farenheit(celsius: f64) -> f64 {
-
-    let mut result = celsius * 9_f64 / 5_f64;
-
-    result = result + 32_f64;
-    result = result * 100_f64;
-    result = result.ceil();
-    result = result / 100_f64;
-    
-/*     (((celsius * 9_f64 / 5_f64) + 32_f64) * 100_f64).ceil() / 100_f64; */
-
-    return result;
+pub fn to_farenheit(celsius: f64) -> f64 {   
+    (((celsius * 9_f64 / 5_f64) + 32_f64) * 100_f64).ceil() / 100_f64
 }
 
 
