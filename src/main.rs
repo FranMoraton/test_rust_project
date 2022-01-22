@@ -27,8 +27,6 @@ mod guessing_game;
 mod chapter3;
 mod testing_1;
 
-use pizzar_test
-
 fn main() {
     /*     
         display_impl::main();
