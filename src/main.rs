@@ -25,6 +25,9 @@ mod reg_ex;
 mod modules;
 mod guessing_game;
 mod chapter3;
+mod testing_1;
+
+use pizzar_test
 
 fn main() {
     /*     
@@ -58,5 +61,4 @@ fn main() {
     println!("{:.3}", temperature::to_farenheit(0.00));
     println!("{:.2}", temperature::to_farenheit(3.00));
     println!("{:.5}", temperature::to_farenheit(-3.00));
-
 }
