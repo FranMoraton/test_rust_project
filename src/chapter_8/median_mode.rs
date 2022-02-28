@@ -24,12 +24,18 @@ pub fn mode(list: Vec<u32>) -> u32 {
     let mut mode_in_list = 0;
     let mut mode_in_list_value = 0;
 
-    for (key, value) in counting_values {
+    for (key, value) in counting_values.clone() {
         if value > mode_in_list_value {
             mode_in_list_value = value; 
             mode_in_list = key;
         }
     }
+
+    counting_values
+        .into_iter()
+        .max_by_key(|&(_, count)| count)
+        .map(|(val, _)| val)
+        .expect("Cannot compute the mode of zero numbers");
 
     return mode_in_list;
 }
