@@ -10,7 +10,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn transform_word_starting_with_vocal_to_hay()
+    fn transform_word_starting_with_vowel_to_hay()
     {
         let word = "apple";
 
@@ -18,7 +18,7 @@ mod tests {
     }
 
     #[test]
-    fn transform_word_starting_with_vocal_to_ay()
+    fn transform_word_starting_with_consonant_to_consonant_plus_ay()
     {
         let word = "fable";
 
