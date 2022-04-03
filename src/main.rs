@@ -25,6 +25,7 @@ mod reg_ex;
 mod modules;
 mod guessing_game;
 mod chapter3;
+mod chapter_13;
 mod chapter_8;
 mod chapter_3_good_way;
 mod testing_1;
@@ -63,4 +64,6 @@ fn main() {
     println!("{:.5}", temperature::to_farenheit(-3.00));
     println!("{:.5}", chapter_3_good_way::temperature::to_farenheit(-3.00));
     println!("{}", chapter_3_good_way::fib::fib(3));
+    let mut cacher = chapter_13::cacher::Cacher::new(|x| chapter_3_good_way::fib::fib(x));
+    println!("{}", cacher.value(10));
 }
