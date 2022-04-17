@@ -1,25 +1,29 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, hash::Hash};
 
-pub struct Cacher<T>
+pub struct Cacher<T, K, V>
 where
-    T: Fn(u64) -> u64,
+    T: Fn(K) -> V,
+    K: Hash + Eq + Copy,
+    V: Copy,
 {
     calculation: T,
-    value: HashMap<u64, u64>,
+    value: HashMap<K, V>,
 }
 
-impl<T> Cacher<T>
+impl<T, K, V> Cacher<T, K, V>
 where
-    T: Fn(u64) -> u64,
+    T: Fn(K) -> V,
+    K: Hash + Eq + Copy,
+    V: Copy,
 {
-    pub fn new(calculation: T) -> Cacher<T> {
+    pub fn new(calculation: T) -> Cacher<T, K, V> {
         Cacher {
             calculation,
             value: HashMap::new(),
         }
     }
 
-    pub fn value(&mut self, arg: u64) -> u64 {
+    pub fn value(&mut self, arg: K) -> V {
         *self.value.entry(arg).or_insert((self.calculation)(arg))
     }
 }
